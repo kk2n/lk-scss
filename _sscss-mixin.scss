@@ -65,7 +65,6 @@
     @if (nth($attr,1)=='z-'){$shu1:$shu+z-index;$zhi:1;}
     @if (nth($attr,1)=='jz'){$shu1:$shu+margin-left;$zhi:auto+';'+'margin-right:auto'}
     @if (nth($attr,1)=='jzc'){$shu1:$shu+margin-left;$zhi:auto+';'+'margin-right:auto;text-align:center'}
-
     //块属性及修饰，包括宽、高、内间、外间、边、背景
     @if (nth($attr,1)=='w'){$shu1:$shu+width;$zhi:auto;}
     @if (nth($attr,1)=='h'){$shu1:$shu+height;$zhi:auto;}
