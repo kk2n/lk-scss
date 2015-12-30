@@ -43,4 +43,5 @@ ShortScss (简写：sscss)--简单的，简短的，缩写的，胡乱的，疯�
 尺寸间距及边框装饰： w          width
                   h          height
                   mw         min-width
+                  maw        max-width
 </pre>
