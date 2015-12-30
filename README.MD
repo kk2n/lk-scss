@@ -8,18 +8,18 @@ ShortScss (简写：sscss)
 作  者：   Likuan
 关键词：   简单的，简短的，缩写的，胡乱的，疯狂的Scss的简写混合（mixin）方法。
 开发目标： 简化CSS编写代码，提高工作效率，
-使用方法： @include m();括号中写入简化代码，
+使用方法： @include m(() 简化代码1 简化代码2 简化代码n...);括号中写入简化代码，
 格式为：   使用默认值：    (x x x);
           自定义值：     ((x n) (x n) (x n));
           多个自定义值：  ((x (n n)) (x (n n)) (x (n n)));
 
-          例如：@include m(p);
+          例如：@include m(() p);
           生成:padding:0;
 
-          例如：@include m((p 30) m);
+          例如：@include m(() (p 30) m);
           生成:padding:30px;margin:0;
 
-          例如：@include m(w (h 20) (p 30) m);
+          例如：@include m(() w (h 20) (p 30) m);
           生成:width:auto; height:20px; padding:30px; margin:0;
 
 简写代码（如下）

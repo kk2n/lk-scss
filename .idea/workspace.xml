@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e834d556-68e2-4786-9f82-575ed47095ab" name="Default" comment="">
+    <list default="true" id="e834d556-68e2-4786-9f82-575ed47095ab" name="Default" comment="格式整理">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sscss-mixin.scss" afterPath="$PROJECT_DIR$/_sscss-mixin.scss" />
     </list>
     <ignored path="short.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,8 +28,8 @@
       <file leaf-file-name="_sscss-mixin.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_sscss-mixin.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.172414">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="78" />
+            <state vertical-scroll-proportion="-23.310345">
+              <caret line="171" column="39" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -36,8 +38,8 @@
       <file leaf-file-name="README.MD" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.MD">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7667032">
-              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.36473164">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,8 +67,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/_lk-mixin.scss" />
-        <option value="$PROJECT_DIR$/_sscss-mixin.scss" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/_sscss-mixin.scss" />
         <option value="$PROJECT_DIR$/README.MD" />
       </list>
     </option>
@@ -132,7 +134,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="C:\nodejs\node.exe" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
@@ -263,7 +265,37 @@
       <option name="project" value="LOCAL" />
       <updated>1451441171388</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="修改readme">
+      <created>1451441195864</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1451441195864</updated>
+    </task>
+    <task id="LOCAL-00014" summary="修改readme">
+      <created>1451441307086</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1451441307086</updated>
+    </task>
+    <task id="LOCAL-00015" summary="#&#9;README.MD&#10;">
+      <created>1451444435262</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1451444435262</updated>
+    </task>
+    <task id="LOCAL-00016" summary="格式整理">
+      <created>1451444547701</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1451444547701</updated>
+    </task>
+    <task id="LOCAL-00017" summary="新增简写（f 100 14px normal）">
+      <created>1451458902840</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1451458902840</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -303,7 +335,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="名称整理" />
     <MESSAGE value="修改readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改readme" />
+    <MESSAGE value="#&#9;README.MD&#10;" />
+    <MESSAGE value="格式整理" />
+    <MESSAGE value="新增简写（f 100 14px normal）" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增简写（f 100 14px normal）" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -312,16 +347,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/_sscss-mixin.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.172414">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="78" />
+        <state vertical-scroll-proportion="-23.310345">
+          <caret line="171" column="39" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.MD">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7667032">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        <state vertical-scroll-proportion="0.36473164">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>

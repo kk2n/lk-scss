@@ -7,18 +7,28 @@
 @mixin ss($val){
   $vl:'';
   @each $at in $val{
-    @if (type_of($at)=="number"){
-      $n:index($val,$at);
-      $vl:(nth($val,abs($n)-1),nth($val,$n)),(a);
+    @if(length($at)>1){
+      @if (type_of(nth($at,1))=="number") or (type_of(nth($at,1))=="color"){
+        $n:index($val,$at);
+        $vl:(nth($val,abs($n)-1),nth($val,$n)),(a);
+      }@else {
+        $vl:$val;
+      }
     }@else {
-      $vl:$val;
+      @if (type_of($at)=="number") or (type_of($at)=="color"){
+        $n:index($val,$at);
+        $vl:(nth($val,abs($n)-1),nth($val,$n)),(a);
+      }@else {
+        $vl:$val;
+      }
     }
+   // content: $vl;
   }
   @each $attr in unquote($vl){
     @if (length($attr)>0){
-      $note: "/*";$shu:'';$zhi:'';$shu1:'';
+      $note: "/*comment";$shu:'';$zhi:'';$shu1:'';
       //显示属性，包括浮动f（float）、fl(float:left)、fr(float:right)、显示d(display)、dn(display:none)、db(display:block)。
-      @if (nth($attr,1)=='n'){$shu1:$note;$zhi:'备注*/'}
+      @if (nth($attr,1)=='n'){$shu1:$note;$zhi:'*/'}
       @if (nth($attr,1)=='db') or (nth($attr,1)=='show'){$shu1:$shu+display;$zhi:block;}
       @if (nth($attr,1)=='dn') or (nth($attr,1)=='hide'){$shu1:$shu+display;$zhi:none;}
       @if (nth($attr,1)=='poa') or (nth($attr,1)=='po'){$shu1:$shu+position;$zhi:absolute;}
@@ -100,6 +110,16 @@
       @if (nth($attr,1)=='td'){$shu1:$shu+text-decoration;$zhi:none;}
       @if (nth($attr,1)=='lhh'){$shu1:$shu+line-height;$zhi:$lh+';'+'height:'+$lh*$fz;}
       @if (nth($attr,1)=='zjj'){$shu1:$shu+text-align;$zhi:justify+';'+'letter-spacing:normal';}
+      //space(宽auto|高1px|背景#e1)
+      //{width:100%;overflow:hidden;height:1px;font:0px normal;clear: both;margin:0 auto;background:#e1e1e1;}
+      @if (nth($attr,1)=='hx'){
+        $shu1:$shu+height;$zhi:100%+';
+        width:100%;
+        overflow:hidden;
+        font:0/0 normal;
+        clear:both;
+        margin:0 auto;
+        background:#e1e1e1'}
       @if (length($attr)==2) { //只有2个值时
         $shu: nth($attr, 1);$v1: '';
         @if (length(nth($attr,2))==5) {
@@ -907,6 +927,77 @@
               $zhi:unquote(100 $fz normal);
             }
           }
+          @if (nth($attr,1)=='hx'){
+            $x:'';$a:'';$ax:'';$b:'';$bx:'';$c:'';$cx:'';$d:0;$s:nth($attr, 2);
+            @each $v in $s{
+              @if (type_of($v)=="color"){
+                $c:$v;
+                $cx:true;
+              }
+              @if (type_of($v)=="number"){
+                @if ($v!=0){
+                  @if (unit($v)==''){
+                    @if(abs($d)==0){
+                      $a:$v+px;
+                      $ax:true;
+                      $d:$d+1;
+                    }@else {
+                      $b:$v+px;
+                      $bx:true;
+                    }
+                  }@else{
+                    @if(abs($d)==0){
+                      $a:$v;
+                      $ax:true;
+                      $d:$d+1;
+                    }@else {
+                      $b:$v;
+                      $bx:true;
+                    }
+                  }
+                }@else{
+                  @if(abs($d)==0){
+                    $a:$v;
+                    $ax:true;
+                    $d:$d+1;
+                  }@else {
+                    $b:$v;
+                    $bx:true;
+                  }
+                }
+              }
+            }
+            @if ($ax==''){
+              $x:100%+';width:'+$b+';background-color:'+$c;
+            }
+            @if ($bx==''){
+              $x:$a+';width:100%;background-color:'+$c;
+            }
+            @if ($cx==''){
+              $x:$a+';width:'+$b+';background-color:'+$bdc;
+            }
+            @if ($cx=='') and ($bx==''){
+              $x:$a+';width:100%;background-color:'+$bdc;
+            }
+            @if ($cx=='') and ($ax==''){
+              $x:100%+';width:'+$b+';background-color:'+$bdc;
+            }
+            @if ($bx=='') and ($ax==''){
+              $x:100%+';width:100%;background-color:'+$c;
+            }
+            @if ($bx=='') and ($ax=='') and ($cx==''){
+              $x:100%+';width:100%;background-color:'+$bdc;
+            }
+            @if ($bx!='') and ($ax!='') and ($cx!=''){
+              $x:$a+';width:'+$b+';background-color:'+$c;
+            }
+            $zhi:$x+';overflow:hidden;
+                  font:0/0 normal;
+                  clear:both;
+                  margin:0 auto';
+           // content: $ax $bx $cx $d;
+          }
+
         }
         @if (length(nth($attr,2))==2) {
           $list: nth($attr, 2);
@@ -1490,6 +1581,77 @@
               $zhi:unquote(100 $fz normal);
             }
           }
+          @if (nth($attr,1)=='hx'){
+            $x:'';$a:'';$ax:'';$b:'';$bx:'';$c:'';$cx:'';$d:0;$s:nth($attr, 2);
+            @each $v in $s{
+              @if (type_of($v)=="color"){
+                $c:$v;
+                $cx:true;
+              }
+              @if (type_of($v)=="number"){
+                @if ($v!=0){
+                  @if (unit($v)==''){
+                    @if(abs($d)==0){
+                      $a:$v+px;
+                      $ax:true;
+                      $d:$d+1;
+                    }@else {
+                      $b:$v+px;
+                      $bx:true;
+                    }
+                  }@else{
+                    @if(abs($d)==0){
+                      $a:$v;
+                      $ax:true;
+                      $d:$d+1;
+                    }@else {
+                      $b:$v;
+                      $bx:true;
+                    }
+                  }
+                }@else{
+                  @if(abs($d)==0){
+                    $a:$v;
+                    $ax:true;
+                    $d:$d+1;
+                  }@else {
+                    $b:$v;
+                    $bx:true;
+                  }
+                }
+              }
+            }
+            @if ($ax==''){
+              $x:100%+';width:'+$b+';background-color:'+$c;
+            }
+            @if ($bx==''){
+              $x:$a+';width:100%;background-color:'+$c;
+            }
+            @if ($cx==''){
+              $x:$a+';width:'+$b+';background-color:'+$bdc;
+            }
+            @if ($cx=='') and ($bx==''){
+              $x:$a+';width:100%;background-color:'+$bdc;
+            }
+            @if ($cx=='') and ($ax==''){
+              $x:100%+';width:'+$b+';background-color:'+$bdc;
+            }
+            @if ($bx=='') and ($ax==''){
+              $x:100%+';width:100%;background-color:'+$c;
+            }
+            @if ($bx=='') and ($ax=='') and ($cx==''){
+              $x:100%+';width:100%;background-color:'+$bdc;
+            }
+            @if ($bx!='') and ($ax!='') and ($cx!=''){
+              $x:$a+';width:'+$b+';background-color:'+$c;
+            }
+            $zhi:$x+';overflow:hidden;
+                  font:0/0 normal;
+                  clear:both;
+                  margin:0 auto';
+            //content: $ax $bx $cx $d;
+          }
+
         }
         @if (length(nth($attr,2))==1) {
           $list: nth($attr, 2);
@@ -2097,6 +2259,76 @@
             @if ($wx=="") and ($cx=="") and ($dx==""){
               $zhi:unquote(100 $fz normal);
             }
+          }
+          @if (nth($attr,1)=='hx'){
+            $x:'';$a:'';$ax:'';$b:'';$bx:'';$c:'';$cx:'';$d:0;$s:nth($attr, 2);
+            @each $v in $s{
+              @if (type_of($v)=="color"){
+                $c:$v;
+                $cx:true;
+              }
+              @if (type_of($v)=="number"){
+                @if ($v!=0){
+                  @if (unit($v)==''){
+                    @if(abs($d)==0){
+                      $a:$v+px;
+                      $ax:true;
+                      $d:$d+1;
+                    }@else {
+                      $b:$v+px;
+                      $bx:true;
+                    }
+                  }@else{
+                    @if(abs($d)==0){
+                      $a:$v;
+                      $ax:true;
+                      $d:$d+1;
+                    }@else {
+                      $b:$v;
+                      $bx:true;
+                    }
+                  }
+                }@else{
+                  @if(abs($d)==0){
+                    $a:$v;
+                    $ax:true;
+                    $d:$d+1;
+                  }@else {
+                    $b:$v;
+                    $bx:true;
+                  }
+                }
+              }
+            }
+            @if ($ax==''){
+              $x:100%+';width:'+$b+';background-color:'+$c;
+            }
+            @if ($bx==''){
+              $x:$a+';width:100%;background-color:'+$c;
+            }
+            @if ($cx==''){
+              $x:$a+';width:'+$b+';background-color:'+$bdc;
+            }
+            @if ($cx=='') and ($bx==''){
+              $x:$a+';width:100%;background-color:'+$bdc;
+            }
+            @if ($cx=='') and ($ax==''){
+              $x:100%+';width:'+$b+';background-color:'+$bdc;
+            }
+            @if ($bx=='') and ($ax==''){
+              $x:100%+';width:100%;background-color:'+$c;
+            }
+            @if ($bx=='') and ($ax=='') and ($cx==''){
+              $x:100%+';width:100%;background-color:'+$bdc;
+            }
+            @if ($bx!='') and ($ax!='') and ($cx!=''){
+              $x:$a+';width:'+$b+';background-color:'+$c;
+            }
+            $zhi:$x+';overflow:hidden;
+                  font:0/0 normal;
+                  clear:both;
+                  margin:0 auto';
+            //content: $ax $bx $cx $d;
           }
         }
       }
@@ -2752,6 +2984,76 @@
           }
           //content: $c;
         }
+        @if (nth($attr,1)=='hx'){
+          $x:'';$a:'';$ax:'';$b:'';$bx:'';$c:'';$cx:'';$d:0;$s:nth($attr, 2),nth($attr, 3);
+          @each $v in $s{
+            @if (type_of($v)=="color"){
+              $c:$v;
+              $cx:true;
+            }
+            @if (type_of($v)=="number"){
+              @if ($v!=0){
+                @if (unit($v)==''){
+                  @if(abs($d)==0){
+                    $a:$v+px;
+                    $ax:true;
+                    $d:$d+1;
+                  }@else {
+                    $b:$v+px;
+                    $bx:true;
+                  }
+                }@else{
+                  @if(abs($d)==0){
+                    $a:$v;
+                    $ax:true;
+                    $d:$d+1;
+                  }@else {
+                    $b:$v;
+                    $bx:true;
+                  }
+                }
+              }@else{
+                @if(abs($d)==0){
+                  $a:$v;
+                  $ax:true;
+                  $d:$d+1;
+                }@else {
+                  $b:$v;
+                  $bx:true;
+                }
+              }
+            }
+          }
+          @if ($ax==''){
+            $x:100%+';width:'+$b+';background-color:'+$c;
+          }
+          @if ($bx==''){
+            $x:$a+';width:100%;background-color:'+$c;
+          }
+          @if ($cx==''){
+            $x:$a+';width:'+$b+';background-color:'+$bdc;
+          }
+          @if ($cx=='') and ($bx==''){
+            $x:$a+';width:100%;background-color:'+$bdc;
+          }
+          @if ($cx=='') and ($ax==''){
+            $x:100%+';width:'+$b+';background-color:'+$bdc;
+          }
+          @if ($bx=='') and ($ax==''){
+            $x:100%+';width:100%;background-color:'+$c;
+          }
+          @if ($bx=='') and ($ax=='') and ($cx==''){
+            $x:100%+';width:100%;background-color:'+$bdc;
+          }
+          @if ($bx!='') and ($ax!='') and ($cx!=''){
+            $x:$a+';width:'+$b+';background-color:'+$c;
+          }
+          $zhi:$x+';overflow:hidden;
+                  font:0/0 normal;
+                  clear:both;
+                  margin:0 auto';
+          content: $ax $bx $cx $d;
+        }
       }
       @if (length($attr)==4){//只有3个值时
         $shu:nth($attr,1);$v1:'';$v2:'';$v3:'';
@@ -3241,6 +3543,76 @@
             $zhi:unquote($c $w $d);
           }
           //content: $c;
+        }
+        @if (nth($attr,1)=='hx'){
+          $x:'';$a:'';$ax:'';$b:'';$bx:'';$c:'';$cx:'';$d:0;$s:nth($attr, 2),nth($attr, 3),nth($attr, 4);
+          @each $v in $s{
+            @if (type_of($v)=="color"){
+              $c:$v;
+              $cx:true;
+            }
+            @if (type_of($v)=="number"){
+              @if ($v!=0){
+                @if (unit($v)==''){
+                  @if(abs($d)==0){
+                    $a:$v+px;
+                    $ax:true;
+                    $d:$d+1;
+                  }@else {
+                    $b:$v+px;
+                    $bx:true;
+                  }
+                }@else{
+                  @if(abs($d)==0){
+                    $a:$v;
+                    $ax:true;
+                    $d:$d+1;
+                  }@else {
+                    $b:$v;
+                    $bx:true;
+                  }
+                }
+              }@else{
+                @if(abs($d)==0){
+                  $a:$v;
+                  $ax:true;
+                  $d:$d+1;
+                }@else {
+                  $b:$v;
+                  $bx:true;
+                }
+              }
+            }
+          }
+          @if ($ax==''){
+            $x:100%+';width:'+$b+';background-color:'+$c;
+          }
+          @if ($bx==''){
+            $x:$a+';width:100%;background-color:'+$c;
+          }
+          @if ($cx==''){
+            $x:$a+';width:'+$b+';background-color:'+$bdc;
+          }
+          @if ($cx=='') and ($bx==''){
+            $x:$a+';width:100%;background-color:'+$bdc;
+          }
+          @if ($cx=='') and ($ax==''){
+            $x:100%+';width:'+$b+';background-color:'+$bdc;
+          }
+          @if ($bx=='') and ($ax==''){
+            $x:100%+';width:100%;background-color:'+$c;
+          }
+          @if ($bx=='') and ($ax=='') and ($cx==''){
+            $x:100%+';width:100%;background-color:'+$bdc;
+          }
+          @if ($bx!='') and ($ax!='') and ($cx!=''){
+            $x:$a+';width:'+$b+';background-color:'+$c;
+          }
+          $zhi:$x+';overflow:hidden;
+                  font:0/0 normal;
+                  clear:both;
+                  margin:0 auto';
+          content: $ax $bx $cx $d;
         }
       }
       @if (length($attr)==5){//只有3个值时
