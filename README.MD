@@ -1,5 +1,6 @@
 
-ShortScss (简写：sscss)--简单的，简短的，缩写的，胡乱的，疯狂的Scss的简写混合（mixin）方法
+ShortScss (简写：sscss)
+简单的，简短的，缩写的，胡乱的，疯狂的Scss的简写混合（mixin）方法
 ----------------------------------------------------------------------------
 <pre>
 项目名：   ShortScss (简写：sscss)
@@ -40,8 +41,25 @@ ShortScss (简写：sscss)--简单的，简短的，缩写的，胡乱的，疯�
                   jz         margin-left:auto; margin-right:auto
                   jzc        margin-left:auto; margin-right:auto; text-align:center
                   ...
-尺寸间距及边框装饰： w          width
-                  h          height
+尺寸间距及边框装饰： w          width:auto
+                  h          height:auto
                   mw         min-width
                   maw        max-width
+                  mh         max-height
+                  mah        max-height
+                  o          overflow:hidden
+                  ox         overflow-x
+                  oy         overflow-y
+                  p          padding:0
+                  pl         padding-left:0
+                  pr         padding-right:0
+                  pt         padding-top:0
+                  pb         padding-bottom:0
+                  m          margin:0
+                  ml         margin-left:0
+                  mr         margin-right:0
+                  mt         margin-top:0
+                  mb         margin-bottom:0
+                  mp         margin:0;padding:0
+                  pm         padding:0;margin:0;
 </pre>
