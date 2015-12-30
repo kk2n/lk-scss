@@ -1,6 +1,6 @@
 @charset "UTF-8";
 //---------------------------------------------------------------
-// 项目名：   ShortScss
+// 项目名：   ShortScss (简写：sscss)
 // 版  本：   V1.0.0
 // 作  者：   Likuan
 // 关键词：   简单的，简短的，缩写的，胡乱的，疯狂的Scss的简写混合（mixin）方法。
@@ -37,12 +37,13 @@
 //                  c          clip:auto
 //                  z 或 z-    z-index:1
 //                  jz         margin-left:auto; margin-right:auto
-//                  jzc         margin-left:auto; margin-right:auto; text-align:center
+//                  jzc        margin-left:auto; margin-right:auto; text-align:center
 //                  ...
-//
-//显示d(display)、dn(display:none)、db(display:block)
+//尺寸间距及边框装饰： w          width
+//                  h          height
+//                  mw         min-width
 //----------------------------------------------------------------
-@mixin m($val){
+@mixin ss($val){
   @each $attr in $val{
     $note: "/*";$shu:'';$zhi:'';$shu1:'';
     //显示属性，包括浮动f（float）、fl(float:left)、fr(float:right)、显示d(display)、dn(display:none)、db(display:block)。
