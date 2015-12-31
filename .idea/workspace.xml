@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e834d556-68e2-4786-9f82-575ed47095ab" name="Default" comment="格式整理">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
+    <list default="true" id="e834d556-68e2-4786-9f82-575ed47095ab" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sscss-mixin.scss" afterPath="$PROJECT_DIR$/_sscss-mixin.scss" />
     </list>
     <ignored path="short.iws" />
@@ -29,8 +27,11 @@
         <entry file="file://$PROJECT_DIR$/_sscss-mixin.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-23.310345">
-              <caret line="171" column="39" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="39" />
-              <folding />
+              <caret line="153" column="39" selection-start-line="153" selection-start-column="33" selection-end-line="153" selection-end-column="39" />
+              <folding>
+                <marker date="1451526976251" expanded="true" signature="32624:34868" placeholder="{...}" />
+                <marker date="1451526976251" expanded="true" signature="73743:75987" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -295,14 +296,20 @@
       <option name="project" value="LOCAL" />
       <updated>1451458902840</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="添加hx，，间隔,有三个值width，height ,bg">
+      <created>1451470837804</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1451470837804</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="779" y="16" width="362" height="985" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="779" y="16" width="362" height="985" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
@@ -338,7 +345,8 @@
     <MESSAGE value="#&#9;README.MD&#10;" />
     <MESSAGE value="格式整理" />
     <MESSAGE value="新增简写（f 100 14px normal）" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增简写（f 100 14px normal）" />
+    <MESSAGE value="添加hx，，间隔,有三个值width，height ,bg" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加hx，，间隔,有三个值width，height ,bg" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -348,8 +356,11 @@
     <entry file="file://$PROJECT_DIR$/_sscss-mixin.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.310345">
-          <caret line="171" column="39" selection-start-line="171" selection-start-column="33" selection-end-line="171" selection-end-column="39" />
-          <folding />
+          <caret line="153" column="39" selection-start-line="153" selection-start-column="33" selection-end-line="153" selection-end-column="39" />
+          <folding>
+            <marker date="1451526976251" expanded="true" signature="32624:34868" placeholder="{...}" />
+            <marker date="1451526976251" expanded="true" signature="73743:75987" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -4,27 +4,9 @@
 // 版  本：   V1.0.0
 // 作  者：   Likuan
 // 关键词：   简单的，简短的，缩写的，胡乱的，疯狂的Scss的简写混合（mixin）方法。
+
 @mixin ss($val){
-  $vl:'';
-  @each $at in $val{
-    @if(length($at)>1){
-      @if (type_of(nth($at,1))=="number") or (type_of(nth($at,1))=="color"){
-        $n:index($val,$at);
-        $vl:(nth($val,abs($n)-1),nth($val,$n)),(a);
-      }@else {
-        $vl:$val;
-      }
-    }@else {
-      @if (type_of($at)=="number") or (type_of($at)=="color"){
-        $n:index($val,$at);
-        $vl:(nth($val,abs($n)-1),nth($val,$n)),(a);
-      }@else {
-        $vl:$val;
-      }
-    }
-   // content: $vl;
-  }
-  @each $attr in unquote($vl){
+  @each $attr in unquote($val){
     @if (length($attr)>0){
       $note: "/*comment";$shu:'';$zhi:'';$shu1:'';
       //显示属性，包括浮动f（float）、fl(float:left)、fr(float:right)、显示d(display)、dn(display:none)、db(display:block)。
