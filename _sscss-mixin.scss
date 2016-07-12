@@ -4,106 +4,101 @@
 // 版  本：   V1.0.0
 // 作  者：   Likuan
 // 关键词：   简单的，简短的，缩写的，胡乱的，疯狂的Scss的简写混合（mixin）方法。
-
 @mixin ss($val){
   @each $attr in unquote($val){
     @if (length($attr)>0){
-      $note: "/*comment";$shu:'';$zhi:'';$shu1:'';
-      //显示属性，包括浮动f（float）、fl(float:left)、fr(float:right)、显示d(display)、dn(display:none)、db(display:block)。
+      $note: "/*comment";$shu:null;$zhi:null;$shu1:null;
       @if (nth($attr,1)=='n'){$shu1:$note;$zhi:'*/'}
-      @if (nth($attr,1)=='db') or (nth($attr,1)=='show'){$shu1:$shu+display;$zhi:block;}
-      @if (nth($attr,1)=='dn') or (nth($attr,1)=='hide'){$shu1:$shu+display;$zhi:none;}
-      @if (nth($attr,1)=='poa') or (nth($attr,1)=='po'){$shu1:$shu+position;$zhi:absolute;}
-      @if (nth($attr,1)=='por'){$shu1:$shu+position;$zhi:relative;}
-      @if (nth($attr,1)=='pof'){$shu1:$shu+position;$zhi:fixed;}
-      @if (nth($attr,1)=='fl'){$shu1:$shu+float;$zhi:left;}
-      @if (nth($attr,1)=='fr'){$shu1:$shu+float;$zhi:right;}
-      @if (nth($attr,1)=='cb'){$shu1:$shu+clear;$zhi:both;}
-      @if (nth($attr,1)=='l'){$shu1:$shu+left;$zhi:0;}
-      @if (nth($attr,1)=='r'){$shu1:$shu+right;$zhi:0;}
-      @if (nth($attr,1)=='t'){$shu1:$shu+top;$zhi:0;}
-      @if (nth($attr,1)=='b'){$shu1:$shu+bottom;$zhi:0;}
-      @if (nth($attr,1)=='c'){$shu1:$shu+clip;$zhi:auto;}
-      @if (nth($attr,1)=='z'){$shu1:$shu+z-index;$zhi:1;}
-      @if (nth($attr,1)=='z-'){$shu1:$shu+z-index;$zhi:1;}
-      @if (nth($attr,1)=='jz'){$shu1:$shu+margin-left;$zhi:auto+';'+'margin-right:auto'}
-      @if (nth($attr,1)=='jzc'){$shu1:$shu+margin-left;$zhi:auto+';'+'margin-right:auto;text-align:center'}
-      //块属性及修饰，包括宽、高、内间、外间、边、背景
-      @if (nth($attr,1)=='w'){$shu1:$shu+width;$zhi:auto;}
-      @if (nth($attr,1)=='h'){$shu1:$shu+height;$zhi:auto;}
-      @if (nth($attr,1)=='mw'){$shu1:$shu+min-width;$zhi:$mw;}
-      @if (nth($attr,1)=='maw'){$shu1:$shu+max-width;$zhi:$maw;}
-      @if (nth($attr,1)=='mh'){$shu1:$shu+min-height;$zhi:$mh;}
-      @if (nth($attr,1)=='mah'){$shu1:$shu+max-width;$zhi:$mah;}
-      @if (nth($attr,1)=='o'){$shu1:$shu+overflow;$zhi:hidden;}
-      @if (nth($attr,1)=='ox'){$shu1:$shu+overflow-x;$zhi:auto;}
-      @if (nth($attr,1)=='oy'){$shu1:$shu+overflow-y;$zhi:auto;}
-      @if (nth($attr,1)=='p'){$shu1:$shu+padding;$zhi:0;}
-      @if (nth($attr,1)=='pl'){$shu1:$shu+padding-left;$zhi:0;}
-      @if (nth($attr,1)=='pr'){$shu1:$shu+padding-right;$zhi:0;}
-      @if (nth($attr,1)=='pt'){$shu1:$shu+padding-top;$zhi:0;}
-      @if (nth($attr,1)=='pb'){$shu1:$shu+padding-bottom;$zhi:0;}
-      @if (nth($attr,1)=='m'){$shu1:$shu+margin;$zhi:0;}
-      @if (nth($attr,1)=='ml'){$shu1:$shu+margin-left;$zhi:0;}
-      @if (nth($attr,1)=='mr'){$shu1:$shu+margin-right;$zhi:0;}
-      @if (nth($attr,1)=='mt'){$shu1:$shu+margin-top;$zhi:0;}
-      @if (nth($attr,1)=='mb'){$shu1:$shu+margin-bottom;$zhi:0;}
-      @if (nth($attr,1)=='mp'){$shu1:$shu+margin;$zhi:'0;padding: 0';}
-      @if (nth($attr,1)=='pm'){$shu1:$shu+padding;$zhi:'0;margin: 0';}
-      @if (nth($attr,1)=='wh'){$shu1:$shu+width;$zhi:'0;height: 0';}
-      @if (nth($attr,1)=='mp-'){$shu1:$shu+margin;$zhi:'0;padding:0';}
-      @if (nth($attr,1)=='pm-'){$shu1:$shu+padding;$zhi:'0;margin:0';}
-      @if (nth($attr,1)=='wh-'){$shu1:$shu+width;$zhi:'auto;height:auto';}
-      @if (nth($attr,1)=='wo'){$shu1:$shu+width;$zhi:'auto;overflow:hidden';}
-      @if (nth($attr,1)=='ho'){$shu1:$shu+height;$zhi:'auto;overflow:hidden';}
-      @if (nth($attr,1)=='who'){$shu1:$shu+width;$zhi:'auto;height:auto;overflow:hidden';}
-      @if (nth($attr,1)=='bdw'){$shu1:$shu+border-width;$zhi:'1px';}
-      @if (nth($attr,1)=='bds'){$shu1:$shu+border-style;$zhi:'solid';}
-      @if (nth($attr,1)=='bdx'){$shu1:$shu+border-style;$zhi:'dotted';}
-      @if (nth($attr,1)=='bdc'){$shu1:$shu+border-color;$zhi:$bdc;}
-      @if (nth($attr,1)=='bdt'){$shu1:$shu+border-top;$zhi:1px solid $bdc;}
-      @if (nth($attr,1)=='bdb'){$shu1:$shu+border-bottom;$zhi:1px solid $bdc;}
-      @if (nth($attr,1)=='bdl'){$shu1:$shu+border-left;$zhi:1px solid $bdc;}
-      @if (nth($attr,1)=='bdr'){$shu1:$shu+border-right;$zhi:1px solid $bdc;}
-      @if (nth($attr,1)=='bd'){$shu1:$shu+border;$zhi:1px solid $bdc;}
+      @if (nth($attr,1)=='con'){$shu1:content;$zhi:''}
+      @if (nth($attr,1)=='db') or (nth($attr,1)=='show'){$shu1:display;$zhi:block;}
+      @if (nth($attr,1)=='dn') or (nth($attr,1)=='hide'){$shu1:display;$zhi:none;}
+      @if (nth($attr,1)=='poa') or (nth($attr,1)=='po'){$shu1:position;$zhi:absolute;}
+      @if (nth($attr,1)=='por'){$shu1:position;$zhi:relative;}
+      @if (nth($attr,1)=='pof'){$shu1:position;$zhi:fixed;}
+      @if (nth($attr,1)=='fl'){$shu1:float;$zhi:left;}
+      @if (nth($attr,1)=='fr'){$shu1:float;$zhi:right;}
+      @if (nth($attr,1)=='cb'){$shu1:clear;$zhi:both;}
+      @if (nth($attr,1)=='l'){$shu1:left;$zhi:0;}
+      @if (nth($attr,1)=='r'){$shu1:right;$zhi:0;}
+      @if (nth($attr,1)=='t'){$shu1:top;$zhi:0;}
+      @if (nth($attr,1)=='b'){$shu1:bottom;$zhi:0;}
+      @if (nth($attr,1)=='c'){$shu1:clip;$zhi:auto;}
+      @if (nth($attr,1)=='z'){$shu1:z-index;$zhi:1;}
+      @if (nth($attr,1)=='z-'){$shu1:z-index;$zhi:1;}
+      @if (nth($attr,1)=='jz'){$shu1:margin-left;$zhi:auto+';'+'margin-right:auto'}
+      @if (nth($attr,1)=='jzc'){$shu1:margin-left;$zhi:auto+';'+'margin-right:auto;text-align:center'}
+      @if (nth($attr,1)=='w'){$shu1:width;$zhi:auto;}
+      @if (nth($attr,1)=='h'){$shu1:height;$zhi:auto;}
+      @if (nth($attr,1)=='mw') or (nth($attr,1)=='miw'){$shu1:min-width;$zhi:$mw;}
+      @if (nth($attr,1)=='maw'){$shu1:max-width;$zhi:$maw;}
+      @if (nth($attr,1)=='mh') or (nth($attr,1)=='mih'){$shu1:min-height;$zhi:$mh;}
+      @if (nth($attr,1)=='mah'){$shu1:max-height;$zhi:$mah;}
+      @if (nth($attr,1)=='o'){$shu1:overflow;$zhi:hidden;}
+      @if (nth($attr,1)=='ox'){$shu1:overflow-x;$zhi:auto;}
+      @if (nth($attr,1)=='oy'){$shu1:overflow-y;$zhi:auto;}
+      @if (nth($attr,1)=='p'){$shu1:padding;$zhi:0;}
+      @if (nth($attr,1)=='pl'){$shu1:padding-left;$zhi:0;}
+      @if (nth($attr,1)=='pr'){$shu1:padding-right;$zhi:0;}
+      @if (nth($attr,1)=='pt'){$shu1:padding-top;$zhi:0;}
+      @if (nth($attr,1)=='pb'){$shu1:padding-bottom;$zhi:0;}
+      @if (nth($attr,1)=='m'){$shu1:margin;$zhi:0;}
+      @if (nth($attr,1)=='ml'){$shu1:margin-left;$zhi:0;}
+      @if (nth($attr,1)=='mr'){$shu1:margin-right;$zhi:0;}
+      @if (nth($attr,1)=='mt'){$shu1:margin-top;$zhi:0;}
+      @if (nth($attr,1)=='mb'){$shu1:margin-bottom;$zhi:0;}
+      @if (nth($attr,1)=='mp'){$shu1:margin;$zhi:'0;padding: 0';}
+      @if (nth($attr,1)=='pm'){$shu1:padding;$zhi:'0;margin: 0';}
+      @if (nth($attr,1)=='wh'){$shu1:width;$zhi:'auto;height: auto';}
+      @if (nth($attr,1)=='mp-'){$shu1:margin;$zhi:'0;padding: 0';}
+      @if (nth($attr,1)=='pm-'){$shu1:padding;$zhi:'0;margin: 0';}
+      @if (nth($attr,1)=='wh-'){$shu1:width;$zhi:'auto;height:auto';}
+      @if (nth($attr,1)=='wo'){$shu1:width;$zhi:'auto;overflow:hidden';}
+      @if (nth($attr,1)=='ho'){$shu1:height;$zhi:'auto;overflow:hidden';}
+      @if (nth($attr,1)=='who'){$shu1:width;$zhi:'auto;height:auto;overflow:hidden';}
+      @if (nth($attr,1)=='bdw'){$shu1:border-width;$zhi:'1px';}
+      @if (nth($attr,1)=='bds'){$shu1:border-style;$zhi:'solid';}
+      @if (nth($attr,1)=='bdx'){$shu1:border-style;$zhi:'dotted';}
+      @if (nth($attr,1)=='bdc'){$shu1:border-color;$zhi:$bdc;}
+      @if (nth($attr,1)=='bdt'){$shu1:border-top;$zhi:1px solid $bdc;}
+      @if (nth($attr,1)=='bdb'){$shu1:border-bottom;$zhi:1px solid $bdc;}
+      @if (nth($attr,1)=='bdl'){$shu1:border-left;$zhi:1px solid $bdc;}
+      @if (nth($attr,1)=='bdr'){$shu1:border-right;$zhi:1px solid $bdc;}
+      @if (nth($attr,1)=='bd'){$shu1:border;$zhi:1px solid $bdc;}
       @if (nth($attr,1)=='bdrs')
-      or (nth($attr,1)=='brs'){$shu1:$shu+border-radius;$zhi:$brs+';-moz-border-radius:'+$brs+';-webkit-border-radius:'+$brs;}
-      @if (nth($attr,1)=='bgc'){$shu1:$shu+background-color;$zhi:$bgc;}
-      @if (nth($attr,1)=='bgs'){$shu1:$shu+background-size;$zhi:100%;}
-      @if (nth($attr,1)=='bgp'){$shu1:$shu+background-position;$zhi:0 0;}
-      @if (nth($attr,1)=='bgpx'){$shu1:$shu+background-position-x;$zhi:0;}
-      @if (nth($attr,1)=='bgpy'){$shu1:$shu+background-position-y;$zhi:0;}
-      @if (nth($attr,1)=='bgr'){$shu1:$shu+background-repeat;$zhi:$nr;}
-      @if (nth($attr,1)=='bgi'){$shu1:$shu+background-image;$zhi:'url("'+$path+''+$bgi+'")';}
-      @if (nth($attr,1)=='bg'){$shu1:$shu+background;$zhi:'url("'+$path+''+$bgi+'")'+' 0 0 '+$nr;}
-      //字体样式，包括：字体，字大小，行高，颜色
-      @if (nth($attr,1)=='f'){$shu1:$shu+font;$zhi:100 $fz $ff;}
-      @if (nth($attr,1)=='fz'){$shu1:$shu+font-size;$zhi:$fz;}
-      @if (nth($attr,1)=='c'){$shu1:$shu+color;$zhi:$z-c;}
-      @if (nth($attr,1)=='ti'){$shu1:$shu+text-indent;$zhi:$ti;}
-      @if (nth($attr,1)=='ta'){$shu1:$shu+text-align;$zhi:$c;}
-      @if (nth($attr,1)=='tac'){$shu1:$shu+text-align;$zhi:$c;}
-      @if (nth($attr,1)=='tl'){$shu1:$shu+text-align;$zhi:left;}
-      @if (nth($attr,1)=='tr'){$shu1:$shu+text-align;$zhi:right;}
-      @if (nth($attr,1)=='tal'){$shu1:$shu+text-align;$zhi:left;}
-      @if (nth($attr,1)=='tar'){$shu1:$shu+text-align;$zhi:right;}
-      @if (nth($attr,1)=='fw'){$shu1:$shu+font-weight;$zhi:100;}
-      @if (nth($attr,1)=='lh'){$shu1:$shu+line-height;$zhi:$lh;}
-      @if (nth($attr,1)=='td'){$shu1:$shu+text-decoration;$zhi:none;}
-      @if (nth($attr,1)=='lhh'){$shu1:$shu+line-height;$zhi:$lh+';'+'height:'+$lh*$fz;}
-      @if (nth($attr,1)=='zjj'){$shu1:$shu+text-align;$zhi:justify+';'+'letter-spacing:normal';}
-      //space(宽auto|高1px|背景#e1)
-      //{width:100%;overflow:hidden;height:1px;font:0px normal;clear: both;margin:0 auto;background:#e1e1e1;}
-      @if (nth($attr,1)=='hx'){
-        $shu1:$shu+height;$zhi:100%+';
-        width:100%;
-        overflow:hidden;
-        font:0/0 normal;
-        clear:both;
-        margin:0 auto;
-        background:#e1e1e1'}
+      or (nth($attr,1)=='brs'){$shu1:border-radius;$zhi:$brs+';-moz-border-radius:'+$brs+';-webkit-border-radius:'+$brs;}
+      @if (nth($attr,1)=='bgc'){$shu1:background-color;$zhi:$bgc;}
+      @if (nth($attr,1)=='bgs'){$shu1:background-size;$zhi:100%;}
+      @if (nth($attr,1)=='bgp'){$shu1:background-position;$zhi:0 0;}
+      @if (nth($attr,1)=='bgpx'){$shu1:background-position-x;$zhi:0;}
+      @if (nth($attr,1)=='bgpy'){$shu1:background-position-y;$zhi:0;}
+      @if (nth($attr,1)=='bgr'){$shu1:background-repeat;$zhi:$nr;}
+      @if (nth($attr,1)=='bgi'){$shu1:background-image;$zhi:'url("'+$path+''+$bgi+'")';}
+      @if (nth($attr,1)=='bg'){$shu1:background;$zhi:inherit;}
+      @if (nth($attr,1)=='f'){$shu1:font;$zhi:100 $fz $ff;}
+      @if (nth($attr,1)=='ff'){$shu1:font-family;$zhi:$ff;}
+      @if (nth($attr,1)=='fz'){$shu1:font-size;$zhi:$fz;}
+      @if (nth($attr,1)=='c'){$shu1:color;$zhi:$z-c;}
+      @if (nth($attr,1)=='ti'){$shu1:text-indent;$zhi:$ti;}
+      @if (nth($attr,1)=='ta'){$shu1:text-align;$zhi:center;}
+      @if (nth($attr,1)=='tac'){$shu1:text-align;$zhi:center;}
+      @if (nth($attr,1)=='tl'){$shu1:text-align;$zhi:left;}
+      @if (nth($attr,1)=='tr'){$shu1:text-align;$zhi:right;}
+      @if (nth($attr,1)=='tal'){$shu1:text-align;$zhi:left;}
+      @if (nth($attr,1)=='tar'){$shu1:text-align;$zhi:right;}
+      @if (nth($attr,1)=='fw'){$shu1:font-weight;$zhi:100;}
+      @if (nth($attr,1)=='lh'){$shu1:line-height;$zhi:$lh;}
+      @if (nth($attr,1)=='op'){$shu1:opacity;$zhi:0;}
+      @if (nth($attr,1)=='td'){$shu1:text-decoration;$zhi:none;}
+      @if (nth($attr,1)=='lhh'){$shu1:line-height;$zhi:$lh+';'+'height:'+$lh*$fz;}
+      @if (nth($attr,1)=='zjj'){$shu1:text-align;$zhi:justify+';'+'letter-spacing:normal';}
+      @if (nth($attr,1)=='hx'){$shu1:height;$zhi:100%+';width:100%;overflow:hidden;font:0/0 normal;clear:both;margin:0 auto;background:'+$bdc}
+      @if (nth($attr,1)=='noios'){$shu1:'-webkit-appearance';$zhi:none;}
+      @if (nth($attr,1)=='di'){$shu1:'display';$zhi:inline-block;}
+      @if (nth($attr,1)=='cur'){$shu1:'cursor';$zhi:pointer;}
+      @if (nth($attr,1)=='cup'){$shu1:'cursor';$zhi:pointer;}
+      @if (nth($attr,1)=='a'){$shu1:'cursor:pointer;text-decoration:none;color';$zhi:$a-c}
       @if (length($attr)==2) { //只有2个值时
-        $shu: nth($attr, 1);$v1: '';
+        $shu: nth($attr, 1);$v1:'';
         @if (length(nth($attr,2))==5) {
           //特殊项处理
           @if (nth($attr,1)=='bg') {
@@ -163,7 +158,7 @@
                 }
               }
               @if (type_of($v)!="color") and (type_of($v)!="number") and (($v!="no-repeat") and ($v!="nr") and ($v!="repeat-x") and ($v!="repeat-y") and ($v!="center") and ($v!="top") and ($v!="left") and ($v!="right") and ($v!="bottom")) {
-                $img: 'url("' $path+$v+'")';
+                $img: 'url("'+$path+$v+'")';
                 $i-t: true;
               }
             }
@@ -403,7 +398,7 @@
                 }
               }
               @if (type_of($v)!="color") and (type_of($v)!="number") and (($v!="no-repeat") and ($v!="nr") and ($v!="repeat-x") and ($v!="repeat-y") and ($v!="center") and ($v!="top") and ($v!="left") and ($v!="right") and ($v!="bottom")) {
-                $img: 'url("' $path+$v+'")';
+                $img: 'url("'+$path+$v+'")';
                 $i-t: true;
               }
             }
@@ -507,7 +502,7 @@
             }
             // content: $v1;
           }
-          $zhi: $v1;
+          $zhi:$v1;
           //特殊项处理
           @if (nth($attr,1)=='mp') {
             $shu: nth($attr, 1);
@@ -773,7 +768,7 @@
                 }
               }
               @if (type_of($v)!="color") and (type_of($v)!="number") and (($v!="no-repeat") and ($v!="nr") and ($v!="repeat-x") and ($v!="repeat-y") and ($v!="center") and ($v!="top") and ($v!="left") and ($v!="right") and ($v!="bottom")) {
-                $img: 'url("' $path+$v+'")';
+                $img: 'url("'+$path+$v+'")';
                 $i-t: true;
               }
             }
@@ -997,9 +992,8 @@
             } @else {
               $v1: $v1+' '+$mv;
             }
-            // content: $v1;
           }
-          $zhi: $v1;
+          $zhi:$v1;
           //特殊项处理
           @if (nth($attr,1)=='mp') {
             $shu: nth($attr, 1);
@@ -1151,36 +1145,20 @@
           }
           @if (nth($attr,1)=='wo') {
             $shu: nth($attr, 1);
-            $v1: '';
-            $v2: '';
-            @each $mv in nth(nth($attr, 2), 1) {
-              @if (type_of($mv)=="number") {
-                @if (unit($mv)=='') {
-                  @if (abs($mv)!=0) {
-                    $v1: $v1+' '+$mv+px;
-                  } @else {
-                    $v1: $v1+' '+$mv;
-                  }
-                } @else {
-                  $v1: $v1+' '+$mv;
+            $v1: nth(nth($attr, 2), 1);
+            @if (type_of(nth(nth($attr, 2), 1))=="number") {
+              @if (unit(nth(nth($attr, 2), 1))=='') {
+                @if (abs(nth(nth($attr, 2), 1))!=0) {
+                  $v1: nth(nth($attr, 2), 1)+px;
                 }
-              } @else {
-                $v1: $v1+' '+$mv;
               }
             }
-            @each $mv in nth(nth($attr, 2), 2) {
-              @if (type_of($mv)=="number") {
-                @if (unit($mv)=='') {
-                  @if (abs($mv)!=0) {
-                    $v2: $v2+' '+$mv+px;
-                  } @else {
-                    $v2: $v2+' '+$mv;
-                  }
-                } @else {
-                  $v2: $v2+' '+$mv;
+            $v2: nth(nth($attr, 2), 2);
+            @if (type_of(nth(nth($attr, 2), 2))=="number") {
+              @if (unit(nth(nth($attr, 2), 2))=='') {
+                @if (abs(nth(nth($attr, 2), 2))!=0) {
+                  $v2: nth(nth($attr, 2), 2)+px;
                 }
-              } @else {
-                $v2: $v2+' '+$mv;
               }
             }
             $zhi: $v1;
@@ -1337,7 +1315,8 @@
             }
             $zhi: $b;
           }
-          @if (nth($attr,1)=='bdrs') or (nth($attr,1)=='brs') {
+          @if (nth($attr,1)=='bdrs')
+          or (nth($attr,1)=='brs') {
             $shu: nth($attr, 1);
             $v1: '';
             $v2: '';
@@ -1427,11 +1406,11 @@
                 }
               }
               @if (type_of($v)!="color") and (type_of($v)!="number") and (($v!="no-repeat") and ($v!="nr") and ($v!="repeat-x") and ($v!="repeat-y") and ($v!="center") and ($v!="top") and ($v!="left") and ($v!="right") and ($v!="bottom")) {
-                $img: 'url("' $path+$v+'")';
+                $img: 'url("'+$path+$v+'")';
                 $i-t: true;
               }
             }
-            // content: $c-t $i-t $x-t $nr1-t $i;
+             //content: $c-t $i-t $x-t $nr1-t $i;
             @if ($c-t=="") {
               @if ($i==1) {
                 $b: $img+' '+$x+' '+0+' '+$nr1;
@@ -1676,9 +1655,14 @@
             }
             $zhi: $v1+'*/';
           }
+          @if (nth($attr,1)=='con') {
+            $shu: nth($attr, 1);
+            $zhi: nth($attr, 2);
+          }
           @if (nth($attr,1)=='lh')
           or (nth($attr,1) =='z')
           or (nth($attr,1) =='z-')
+          or (nth($attr,1) =='op')
           or (nth($attr,1) =='fw') {
             $shu: nth($attr, 1);
             $v1: '';
@@ -1722,20 +1706,12 @@
           }
           @if (nth($attr,1)=='lhh') {
             $shu: nth($attr, 1);
-            $v1: '';
-            @each $mv in nth(nth($attr, 2), 1) {
-              @if (type_of($mv)=="number") {
-                @if (unit($mv)=='') {
-                  @if (abs($mv)!=0) {
-                    $v1: $v1+' '+$mv+px;
-                  } @else {
-                    $v1: $v1+' '+$mv;
-                  }
-                } @else {
-                  $v1: $v1+' '+$mv;
+            $v1: nth(nth($attr, 2), 1);
+            @if (type_of(nth(nth($attr, 2), 1))=="number") {
+              @if (unit(nth(nth($attr, 2), 1))=='') {
+                @if (abs(nth(nth($attr, 2), 1))!=0) {
+                  $v1: nth(nth($attr, 2), 1)+px;
                 }
-              } @else {
-                $v1: $v1+' '+$mv;
               }
             }
             $zhi: $v1;
@@ -1808,21 +1784,12 @@
           }
           @if (nth($attr,1)=='wh') {
             $shu: nth($attr, 1);
-            $v1: '';
-            $v2: '';
-            @each $mv in nth(nth($attr, 2), 1) {
-              @if (type_of($mv)=="number") {
-                @if (unit($mv)=='') {
-                  @if (abs($mv)!=0) {
-                    $v1: $v1+' '+$mv+px;
-                  } @else {
-                    $v1: $v1+' '+$mv;
-                  }
-                } @else {
-                  $v1: $v1+' '+$mv;
+            $v1: nth($attr, 2);
+            @if (type_of(nth($attr, 2))=="number") {
+              @if (unit(nth($attr, 2))=='') {
+                @if (abs(nth($attr, 2))!=0) {
+                  $v1: nth($attr, 2)+px;
                 }
-              } @else {
-                $v1: $v1+' '+$mv;
               }
             }
             $zhi: $v1;
@@ -1830,21 +1797,12 @@
           }
           @if (nth($attr,1)=='wh-') {
             $shu: nth($attr, 1);
-            $v1: '';
-            $v2: '';
-            @each $mv in nth(nth($attr, 2), 1) {
-              @if (type_of($mv)=="number") {
-                @if (unit($mv)=='') {
-                  @if (abs($mv)!=0) {
-                    $v1: $v1+' '+$mv+px;
-                  } @else {
-                    $v1: $v1+' '+$mv;
-                  }
-                } @else {
-                  $v1: $v1+' '+$mv;
+            $v1: nth($attr, 2);
+            @if (type_of(nth($attr, 2))=="number") {
+              @if (unit(nth($attr, 2))=='') {
+                @if (abs(nth($attr, 2))!=0) {
+                  $v1: nth($attr, 2)+px;
                 }
-              } @else {
-                $v1: $v1+' '+$mv;
               }
             }
             $zhi: $v1;
@@ -1852,66 +1810,38 @@
           }
           @if (nth($attr,1)=='wo') {
             $shu: nth($attr, 1);
-            $v1: '';
-            $v2: '';
-            @each $mv in nth(nth($attr, 2), 1) {
-              @if (type_of($mv)=="number") {
-                @if (unit($mv)=='') {
-                  @if (abs($mv)!=0) {
-                    $v1: $v1+' '+$mv+px;
-                  } @else {
-                    $v1: $v1+' '+$mv;
-                  }
-                } @else {
-                  $v1: $v1+' '+$mv;
+            $v1: nth($attr, 2);
+            @if (type_of(nth($attr, 2))=="number") {
+              @if (unit(nth($attr, 2))=='') {
+                @if (abs(nth($attr, 2))!=0) {
+                  $v1: nth($attr, 2)+px;
                 }
-              } @else {
-                $v1: $v1+' '+$mv;
               }
             }
             $zhi: $v1;
-            overflow: unquote($v1);
+            overflow:hidden;
           }
           @if (nth($attr,1)=='ho') {
             $shu: nth($attr, 1);
-            $v1: '';
-            $v2: '';
-            @each $mv in nth(nth($attr, 2), 1) {
-              @if (type_of($mv)=="number") {
-                @if (unit($mv)=='') {
-                  @if (abs($mv)!=0) {
-                    $v1: $v1+' '+$mv+px;
-                  } @else {
-                    $v1: $v1+' '+$mv;
-                  }
-                } @else {
-                  $v1: $v1+' '+$mv;
+            $v1: nth($attr, 2);
+            @if (type_of(nth($attr, 2))=="number") {
+              @if (unit(nth($attr, 2))=='') {
+                @if (abs(nth($attr, 2))!=0) {
+                  $v1: nth($attr, 2)+px;
                 }
-              } @else {
-                $v1: $v1+' '+$mv;
               }
             }
             $zhi: $v1;
-            overflow: unquote($v1);
+            overflow: hidden;
           }
           @if (nth($attr,1)=='who') {
             $shu: nth($attr, 1);
-            $v1: '';
-            $v2: '';
-            $v3: '';
-            @each $mv in nth(nth($attr, 2), 1) {
-              @if (type_of($mv)=="number") {
-                @if (unit($mv)=='') {
-                  @if (abs($mv)!=0) {
-                    $v1: $v1+' '+$mv+px;
-                  } @else {
-                    $v1: $v1+' '+$mv;
-                  }
-                } @else {
-                  $v1: $v1+' '+$mv;
+            $v1: nth($attr, 2);
+            @if (type_of(nth($attr, 2))=="number") {
+              @if (unit(nth($attr, 2))=='') {
+                @if (abs(nth($attr, 2))!=0) {
+                  $v1: nth($attr, 2)+px;
                 }
-              } @else {
-                $v1: $v1+' '+$mv;
               }
             }
             $zhi: $v1;
@@ -2019,20 +1949,12 @@
           }
           @if (nth($attr,1)=='bgs'){
             $shu: nth($attr, 1);
-            $v1: '';
-            @each $mv in (nth($attr, 2)) {
-              @if (type_of($mv)=="number") {
-                @if (unit($mv)=='') {
-                  @if (abs($mv)!=0) {
-                    $v1: $v1+' '+$mv+px;
-                  } @else {
-                    $v1: $v1+' '+$mv;
-                  }
-                } @else {
-                  $v1: $v1+' '+$mv;
+            $v1: nth($attr, 2);
+            @if (type_of(nth($attr, 2))=="number") {
+              @if (unit(nth($attr, 2))=='') {
+                @if (abs(nth($attr, 2))!=0) {
+                  $v1: nth(nth($attr, 2), 1)+px;
                 }
-              } @else {
-                $v1: $v1+' '+$mv;
               }
             }
             $zhi: $v1;
@@ -2106,7 +2028,7 @@
                 }
               }
               @if (type_of($v)!="color") and (type_of($v)!="number") and (($v!="no-repeat") and ($v!="nr") and ($v!="repeat-x") and ($v!="repeat-y") and ($v!="center") and ($v!="top") and ($v!="left") and ($v!="right") and ($v!="bottom")) {
-                $img: 'url("' $path+$v+'")';
+                $img: 'url("'+$path+$v+'")';
                 $i-t: true;
               }
             }
@@ -2184,6 +2106,9 @@
             }
             @if ($nr1-t=="") and ($x-t=="") and ($c-t=="") and ($i-t=="") {
               $b: 'url("'+$path+$bgi+'")'+' 0 0 '+$nr;
+            }
+            @if (nth($attr,2)=="none") {
+              $b: none;
             }
             $b: unquote($b);
             $zhi: $b;
@@ -2825,7 +2750,7 @@
               }
             }
             @if (type_of($v)!="color") and (type_of($v)!="number") and (($v!="no-repeat") and ($v!="nr") and ($v!="repeat-x") and ($v!="repeat-y") and ($v!="center") and ($v!="top") and ($v!="left") and ($v!="right") and ($v!="bottom")){
-              $img:'url("'$path+$v+'")';
+              $img:'url("'+$path+$v+'")';
               $i-t:true;
             }
           }
@@ -2845,7 +2770,7 @@
             }
           }
           @if ($x-t==""){
-            $b:0 0;
+            $b:$c+' '+$img+' 0 0 '+$nr1;
           }
           @if ($nr1-t==""){
             @if ($i==1){
@@ -2855,7 +2780,7 @@
             }
           }
           @if ($nr1-t=="") and ($x-t==""){
-            $b:0 0 no-repeat;
+            $b:$c +' ' + $img +' 0 0 no-repeat';
           }
           @if ($nr1-t=="") and ($c-t==""){
             @if ($i==1){
@@ -3034,7 +2959,7 @@
                   font:0/0 normal;
                   clear:both;
                   margin:0 auto';
-          content: $ax $bx $cx $d;
+          //content: $ax $bx $cx $d;
         }
       }
       @if (length($attr)==4){//只有3个值时
@@ -3385,7 +3310,7 @@
               }
             }
             @if (type_of($v)!="color") and (type_of($v)!="number") and (($v!="no-repeat") and ($v!="nr") and ($v!="repeat-x") and ($v!="repeat-y") and ($v!="center") and ($v!="top") and ($v!="left") and ($v!="right") and ($v!="bottom")){
-              $img:'url("'$path+$v+'")';
+              $img:'url("'+$path+$v+'")';
               $i-t:true;
             }
           }
@@ -3405,7 +3330,7 @@
             }
           }
           @if ($x-t==""){
-            $b:0 0;
+            $b:$c+' '+$img+' 0 0 '+$nr1;
           }
           @if ($nr1-t==""){
             @if ($i==1){
@@ -3415,7 +3340,7 @@
             }
           }
           @if ($nr1-t=="") and ($x-t==""){
-            $b:0 0 no-repeat;
+            $b:$c +' ' + $img +' 0 0 no-repeat';
           }
           @if ($nr1-t=="") and ($c-t==""){
             @if ($i==1){
@@ -3594,7 +3519,7 @@
                   font:0/0 normal;
                   clear:both;
                   margin:0 auto';
-          content: $ax $bx $cx $d;
+          //content: $ax $bx $cx $d;
         }
       }
       @if (length($attr)==5){//只有3个值时
@@ -3901,7 +3826,7 @@
               }
             }
             @if (type_of($v)!="color") and (type_of($v)!="number") and (($v!="no-repeat") and ($v!="nr") and ($v!="repeat-x") and ($v!="repeat-y") and ($v!="center") and ($v!="top") and ($v!="left") and ($v!="right") and ($v!="bottom")){
-              $img:'url("'$path+$v+'")';
+              $img:'url("'+$path+$v+'")';
               $i-t:true;
             }
           }
@@ -3921,7 +3846,7 @@
             }
           }
           @if ($x-t==""){
-            $b:0 0;
+            $b:$c+' '+$img+' 0 0 '+$nr1;
           }
           @if ($nr1-t==""){
             @if ($i==1){
@@ -3931,7 +3856,7 @@
             }
           }
           @if ($nr1-t=="") and ($x-t==""){
-            $b:0 0 no-repeat;
+            $b:$c +' ' + $img +' 0 0 '+$nr;
           }
           @if ($nr1-t=="") and ($c-t==""){
             @if ($i==1){
@@ -4027,7 +3952,7 @@
               }
             }
             @if (type_of($v)!="color") and (type_of($v)!="number") and (($v!="no-repeat") and ($v!="nr") and ($v!="repeat-x") and ($v!="repeat-y") and ($v!="center") and ($v!="top") and ($v!="left") and ($v!="right") and ($v!="bottom")){
-              $img:'url("'$path+$v+'")';
+              $img:'url("'+$path+$v+'")';
               $i-t:true;
             }
           }
@@ -4047,7 +3972,7 @@
             }
           }
           @if ($x-t==""){
-            $b:0 0;
+            $b:$c+' '+$img+' 0 0 '+$nr1;
           }
           @if ($nr1-t==""){
             @if ($i==1){
@@ -4057,7 +3982,7 @@
             }
           }
           @if ($nr1-t=="") and ($x-t==""){
-            $b:0 0 no-repeat;
+            $b:$c +' ' + $img +' 0 0 no-repeat';
           }
           @if ($nr1-t=="") and ($c-t==""){
             @if ($i==1){
@@ -4113,8 +4038,7 @@
           $zhi: $b;
         }
       }
-
-      $zhi:unquote($zhi);
+      @if(nth($attr,1)!='con'){$zhi:unquote($zhi);}
       $shu1:unquote($shu1);
       #{$shu1}:$zhi;
       // content: ($zhi);

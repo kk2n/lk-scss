@@ -1,10 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e834d556-68e2-4786-9f82-575ed47095ab" name="Default" comment="">
+    <list default="true" id="9779cf83-41b4-4127-8ea7-9add69c9ec2a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.MD" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/_base.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/_function.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_accordion.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_alert.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_avatar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_breadcrumb.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_carousel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_col.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_gallery.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_hdtitle.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_imgslide.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_imgstyle.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_imgtextH.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_imgtextV.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_imgtitle.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_layout.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_modal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_paging.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_progress.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_rank.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_search.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_speakList.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_steps.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_tabs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_tagsFilter.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_titleList.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/components/_tooltip.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/core/_css3.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/core/_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/core/_media-queries.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/core/_mixin.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/core/_reset.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/core/_setting.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/_btn.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/_form.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/_helper.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/_message.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/_table.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/_typography.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/animate/_attention-seekers.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/animate/_bounce.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/animate/_fade.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/animate/_flip.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/animate/_lightspeed.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/animate/_rotate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/animate/_slide.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/animate/_special.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/font-face/_font-face.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/font-face/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/font-face/fonts/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/font-face/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/font-face/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/font-face/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/old/ext/font-face/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sscss-mixin.scss" afterPath="$PROJECT_DIR$/_sscss-mixin.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sscss-reset.scss" afterPath="$PROJECT_DIR$/_sscss-reset.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sscss-set.scss" afterPath="$PROJECT_DIR$/_sscss-set.scss" />
     </list>
-    <ignored path="short.iws" />
+    <ignored path="ss.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,28 +80,62 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="short" />
+    <favorites_list name="ss" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_sscss-mixin.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_sscss-mixin.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_sscss-mixin.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.310345">
-              <caret line="153" column="39" selection-start-line="153" selection-start-column="33" selection-end-line="153" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.5259349">
+              <caret line="3891" column="56" selection-start-line="3891" selection-start-column="56" selection-end-line="3891" selection-end-column="56" />
               <folding>
-                <marker date="1451526976251" expanded="true" signature="32624:34868" placeholder="{...}" />
-                <marker date="1451526976251" expanded="true" signature="73743:75987" placeholder="{...}" />
+                <element signature="e#6259#74024#0" expanded="false" />
+                <element signature="e#6344#11488#0" expanded="false" />
+                <element signature="e#11527#19317#0" expanded="false" />
+                <element signature="e#19356#34673#0" expanded="false" />
+                <element signature="e#34712#54563#0" expanded="false" />
+                <element signature="e#35238#36314#0" expanded="false" />
+                <element signature="e#36350#37425#0" expanded="false" />
+                <element signature="e#37461#38536#0" expanded="false" />
+                <element signature="e#38573#39648#0" expanded="false" />
+                <element signature="e#39684#40401#0" expanded="false" />
+                <element signature="e#40437#41514#0" expanded="false" />
+                <element signature="e#41551#42677#0" expanded="false" />
+                <element signature="e#42853#44806#0" expanded="false" />
+                <element signature="e#44879#45544#0" expanded="false" />
+                <element signature="e#48052#48225#0" expanded="false" />
+                <element signature="e#48253#48470#0" expanded="false" />
+                <element signature="e#48498#48536#0" expanded="false" />
+                <element signature="e#48566#48743#0" expanded="false" />
+                <element signature="e#54602#74016#0" expanded="false" />
+                <element signature="e#74399#74870#0" expanded="false" />
+                <element signature="e#74896#75399#0" expanded="false" />
+                <element signature="e#75425#75927#0" expanded="false" />
+                <element signature="e#75952#76908#0" expanded="false" />
+                <element signature="e#76933#77890#0" expanded="false" />
+                <element signature="e#77916#78872#0" expanded="false" />
+                <element signature="e#78897#79853#0" expanded="false" />
+                <element signature="e#79887#80151#0" expanded="false" />
+                <element signature="e#80176#81134#0" expanded="false" />
+                <element signature="e#81159#82117#0" expanded="false" />
+                <element signature="e#82143#83116#0" expanded="false" />
+                <element signature="e#83281#84781#0" expanded="false" />
+                <element signature="e#84841#85376#0" expanded="false" />
+                <element signature="e#85410#86406#0" expanded="false" />
+                <element signature="e#86440#87339#0" expanded="false" />
+                <element signature="e#108787#110484#0" expanded="false" />
+                <element signature="e#110517#112657#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.MD" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.MD">
+      <file leaf-file-name="_sscss-set.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_sscss-set.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36473164">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="-24.827587">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -49,28 +144,12 @@
     </leaf>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="likuan" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="PUSH_TAGS">
-      <GitPushTagMode />
-    </option>
-  </component>
-  <component name="GithubProjectSettings">
-    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
-    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="kk2n" />
-    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="lk-scss" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_lk-mixin.scss" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/_sscss-mixin.scss" />
-        <option value="$PROJECT_DIR$/README.MD" />
       </list>
     </option>
   </component>
@@ -82,7 +161,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
+    <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -92,6 +171,12 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="添加" />
+    <OptionsSetting value="true" id="移除" />
+    <OptionsSetting value="true" id="签出" />
+    <OptionsSetting value="true" id="更新" />
+    <OptionsSetting value="true" id="状态" />
+    <OptionsSetting value="true" id="编辑" />
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
@@ -110,222 +195,69 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="short" />
+              <option name="myItemId" value="ss" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="short" />
+              <option name="myItemId" value="ss" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="short" />
+              <option name="myItemId" value="ss" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="js-jscs-nodeInterpreter" value="C:\nodejs\node.exe" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-  </component>
-  <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
-      <option name="cucumberJsArguments" value="" />
-      <option name="executablePath" />
-      <option name="filePath" />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
-      <scripts />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-options />
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <envs />
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
-      <test-directory />
-      <recursive>false</recursive>
-      <method />
-    </configuration>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
-    <configuration>C:\Users\Lenovo\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e834d556-68e2-4786-9f82-575ed47095ab" name="Default" comment="" />
-      <created>1451379727364</created>
+      <changelist id="9779cf83-41b4-4127-8ea7-9add69c9ec2a" name="Default" comment="" />
+      <created>1457432268998</created>
       <option name="number" value="Default" />
-      <updated>1451379727364</updated>
+      <updated>1457432268998</updated>
     </task>
-    <task id="LOCAL-00001" summary="名称整理">
-      <created>1451437495145</created>
-      <option name="number" value="00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1451437495147</updated>
-    </task>
-    <task id="LOCAL-00002" summary="名称整理">
-      <created>1451437973477</created>
-      <option name="number" value="00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1451437973477</updated>
-    </task>
-    <task id="LOCAL-00003" summary="修改readme">
-      <created>1451438269626</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1451438269626</updated>
-    </task>
-    <task id="LOCAL-00004" summary="修改readme">
-      <created>1451438390217</created>
-      <option name="number" value="00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1451438390217</updated>
-    </task>
-    <task id="LOCAL-00005" summary="修改readme">
-      <created>1451439381459</created>
-      <option name="number" value="00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1451439381459</updated>
-    </task>
-    <task id="LOCAL-00006" summary="修改readme">
-      <created>1451439461217</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1451439461217</updated>
-    </task>
-    <task id="LOCAL-00007" summary="修改readme">
-      <created>1451439721149</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1451439721149</updated>
-    </task>
-    <task id="LOCAL-00008" summary="修改readme">
-      <created>1451439886230</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1451439886230</updated>
-    </task>
-    <task id="LOCAL-00009" summary="修改readme">
-      <created>1451440008611</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1451440008611</updated>
-    </task>
-    <task id="LOCAL-00010" summary="修改readme">
-      <created>1451440250569</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1451440250569</updated>
-    </task>
-    <task id="LOCAL-00011" summary="修改readme">
-      <created>1451441137657</created>
-      <option name="number" value="00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1451441137657</updated>
-    </task>
-    <task id="LOCAL-00012" summary="修改readme">
-      <created>1451441171388</created>
-      <option name="number" value="00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1451441171388</updated>
-    </task>
-    <task id="LOCAL-00013" summary="修改readme">
-      <created>1451441195864</created>
-      <option name="number" value="00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1451441195864</updated>
-    </task>
-    <task id="LOCAL-00014" summary="修改readme">
-      <created>1451441307086</created>
-      <option name="number" value="00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1451441307086</updated>
-    </task>
-    <task id="LOCAL-00015" summary="#&#9;README.MD&#10;">
-      <created>1451444435262</created>
-      <option name="number" value="00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1451444435262</updated>
-    </task>
-    <task id="LOCAL-00016" summary="格式整理">
-      <created>1451444547701</created>
-      <option name="number" value="00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1451444547701</updated>
-    </task>
-    <task id="LOCAL-00017" summary="新增简写（f 100 14px normal）">
-      <created>1451458902840</created>
-      <option name="number" value="00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1451458902840</updated>
-    </task>
-    <task id="LOCAL-00018" summary="添加hx，，间隔,有三个值width，height ,bg">
-      <created>1451470837804</created>
-      <option name="number" value="00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1451470837804</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="779" y="16" width="362" height="985" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1797455" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="779" y="16" width="362" height="985" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.49791667" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -339,36 +271,61 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="名称整理" />
-    <MESSAGE value="修改readme" />
-    <MESSAGE value="#&#9;README.MD&#10;" />
-    <MESSAGE value="格式整理" />
-    <MESSAGE value="新增简写（f 100 14px normal）" />
-    <MESSAGE value="添加hx，，间隔,有三个值width，height ,bg" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加hx，，间隔,有三个值width，height ,bg" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_sscss-mixin.scss">
+    <entry file="file://$PROJECT_DIR$/_sscss-set.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.310345">
-          <caret line="153" column="39" selection-start-line="153" selection-start-column="33" selection-end-line="153" selection-end-column="39" />
-          <folding>
-            <marker date="1451526976251" expanded="true" signature="32624:34868" placeholder="{...}" />
-            <marker date="1451526976251" expanded="true" signature="73743:75987" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="-24.827587">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.MD">
+    <entry file="file://$PROJECT_DIR$/_sscss-mixin.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36473164">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.5259349">
+          <caret line="3891" column="56" selection-start-line="3891" selection-start-column="56" selection-end-line="3891" selection-end-column="56" />
+          <folding>
+            <element signature="e#6259#74024#0" expanded="false" />
+            <element signature="e#6344#11488#0" expanded="false" />
+            <element signature="e#11527#19317#0" expanded="false" />
+            <element signature="e#19356#34673#0" expanded="false" />
+            <element signature="e#34712#54563#0" expanded="false" />
+            <element signature="e#35238#36314#0" expanded="false" />
+            <element signature="e#36350#37425#0" expanded="false" />
+            <element signature="e#37461#38536#0" expanded="false" />
+            <element signature="e#38573#39648#0" expanded="false" />
+            <element signature="e#39684#40401#0" expanded="false" />
+            <element signature="e#40437#41514#0" expanded="false" />
+            <element signature="e#41551#42677#0" expanded="false" />
+            <element signature="e#42853#44806#0" expanded="false" />
+            <element signature="e#44879#45544#0" expanded="false" />
+            <element signature="e#48052#48225#0" expanded="false" />
+            <element signature="e#48253#48470#0" expanded="false" />
+            <element signature="e#48498#48536#0" expanded="false" />
+            <element signature="e#48566#48743#0" expanded="false" />
+            <element signature="e#54602#74016#0" expanded="false" />
+            <element signature="e#74399#74870#0" expanded="false" />
+            <element signature="e#74896#75399#0" expanded="false" />
+            <element signature="e#75425#75927#0" expanded="false" />
+            <element signature="e#75952#76908#0" expanded="false" />
+            <element signature="e#76933#77890#0" expanded="false" />
+            <element signature="e#77916#78872#0" expanded="false" />
+            <element signature="e#78897#79853#0" expanded="false" />
+            <element signature="e#79887#80151#0" expanded="false" />
+            <element signature="e#80176#81134#0" expanded="false" />
+            <element signature="e#81159#82117#0" expanded="false" />
+            <element signature="e#82143#83116#0" expanded="false" />
+            <element signature="e#83281#84781#0" expanded="false" />
+            <element signature="e#84841#85376#0" expanded="false" />
+            <element signature="e#85410#86406#0" expanded="false" />
+            <element signature="e#86440#87339#0" expanded="false" />
+            <element signature="e#108787#110484#0" expanded="false" />
+            <element signature="e#110517#112657#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
