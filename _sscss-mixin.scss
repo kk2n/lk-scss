@@ -22,17 +22,16 @@
       @if (nth($attr,1)=='r'){$shu1:right;$zhi:0;}
       @if (nth($attr,1)=='t'){$shu1:top;$zhi:0;}
       @if (nth($attr,1)=='b'){$shu1:bottom;$zhi:0;}
-      @if (nth($attr,1)=='c'){$shu1:clip;$zhi:auto;}
+      @if (nth($attr,1)=='cl'){$shu1:clip;$zhi:auto;}
       @if (nth($attr,1)=='z'){$shu1:z-index;$zhi:1;}
-      @if (nth($attr,1)=='z-'){$shu1:z-index;$zhi:1;}
       @if (nth($attr,1)=='jz'){$shu1:margin-left;$zhi:auto+';'+'margin-right:auto'}
       @if (nth($attr,1)=='jzc'){$shu1:margin-left;$zhi:auto+';'+'margin-right:auto;text-align:center'}
       @if (nth($attr,1)=='w'){$shu1:width;$zhi:auto;}
       @if (nth($attr,1)=='h'){$shu1:height;$zhi:auto;}
-      @if (nth($attr,1)=='mw') or (nth($attr,1)=='miw'){$shu1:min-width;$zhi:$mw;}
-      @if (nth($attr,1)=='maw'){$shu1:max-width;$zhi:$maw;}
-      @if (nth($attr,1)=='mh') or (nth($attr,1)=='mih'){$shu1:min-height;$zhi:$mh;}
-      @if (nth($attr,1)=='mah'){$shu1:max-height;$zhi:$mah;}
+      @if (nth($attr,1)=='zxw') or (nth($attr,1)=='mw') or (nth($attr,1)=='miw'){$shu1:min-width;$zhi:$mw;}
+      @if (nth($attr,1)=='zdw') or (nth($attr,1)=='maw'){$shu1:max-width;$zhi:$maw;}
+      @if (nth($attr,1)=='zxh') or (nth($attr,1)=='mh') or (nth($attr,1)=='mih'){$shu1:min-height;$zhi:$mh;}
+      @if (nth($attr,1)=='zdh') or (nth($attr,1)=='mah'){$shu1:max-height;$zhi:$mah;}
       @if (nth($attr,1)=='o'){$shu1:overflow;$zhi:hidden;}
       @if (nth($attr,1)=='ox'){$shu1:overflow-x;$zhi:auto;}
       @if (nth($attr,1)=='oy'){$shu1:overflow-y;$zhi:auto;}
@@ -77,14 +76,13 @@
       @if (nth($attr,1)=='f'){$shu1:font;$zhi:100 $fz $ff;}
       @if (nth($attr,1)=='ff'){$shu1:font-family;$zhi:$ff;}
       @if (nth($attr,1)=='fz'){$shu1:font-size;$zhi:$fz;}
+      @if (nth($attr,1)=='fs'){$shu1:font-style;$zhi:normal;}
+      @if (nth($attr,1)=='whs'){$shu1:white-space;$zhi:nowrap;}
       @if (nth($attr,1)=='c'){$shu1:color;$zhi:$z-c;}
       @if (nth($attr,1)=='ti'){$shu1:text-indent;$zhi:$ti;}
-      @if (nth($attr,1)=='ta'){$shu1:text-align;$zhi:center;}
-      @if (nth($attr,1)=='tac'){$shu1:text-align;$zhi:center;}
-      @if (nth($attr,1)=='tl'){$shu1:text-align;$zhi:left;}
-      @if (nth($attr,1)=='tr'){$shu1:text-align;$zhi:right;}
-      @if (nth($attr,1)=='tal'){$shu1:text-align;$zhi:left;}
-      @if (nth($attr,1)=='tar'){$shu1:text-align;$zhi:right;}
+      @if (nth($attr,1)=='ta') or (nth($attr,1)=='tac'){$shu1:text-align;$zhi:center;}
+      @if (nth($attr,1)=='tal') or (nth($attr,1)=='tl'){$shu1:text-align;$zhi:left;}
+      @if (nth($attr,1)=='tar') or (nth($attr,1)=='tr'){$shu1:text-align;$zhi:right;}
       @if (nth($attr,1)=='fw'){$shu1:font-weight;$zhi:100;}
       @if (nth($attr,1)=='lh'){$shu1:line-height;$zhi:$lh;}
       @if (nth($attr,1)=='op'){$shu1:opacity;$zhi:0;}
@@ -97,6 +95,84 @@
       @if (nth($attr,1)=='cur'){$shu1:'cursor';$zhi:pointer;}
       @if (nth($attr,1)=='cup'){$shu1:'cursor';$zhi:pointer;}
       @if (nth($attr,1)=='a'){$shu1:'cursor:pointer;text-decoration:none;color';$zhi:$a-c}
+      @if (nth($attr,1)=='ddd'){$shu1:'text-overflow: ellipsis;display: -webkit-box;-webkit-box-orient: vertical; -webkit-line-clamp';$zhi:$a-c}
+
+      //以下为常用简写
+      @if (nth($attr,1)=='w100'){$shu1:width;$zhi:'100%';}
+      @if (nth($attr,1)=='h100'){$shu1:height;$zhi:'100%';}
+      @if (nth($attr,1)=='wa'){$shu1:width;$zhi:'auto';}
+      @if (nth($attr,1)=='ha'){$shu1:height;$zhi:'auto';}
+      @if (nth($attr,1)=='bd1'){$shu1:border;$zhi:'1px solid #ddd';}
+
+      @if (nth($attr,1)=='p10'){$shu1:padding;$zhi:'10px';}
+      @if (nth($attr,1)=='pt10'){$shu1:padding-top;$zhi:'10px';}
+      @if (nth($attr,1)=='pb10'){$shu1:padding-bottom;$zhi:'10px';}
+      @if (nth($attr,1)=='pl10'){$shu1:padding-left;$zhi:'10px';}
+      @if (nth($attr,1)=='pr10'){$shu1:padding-right;$zhi:'10px';}
+
+      @if (nth($attr,1)=='p20'){$shu1:padding;$zhi:'20px';}
+      @if (nth($attr,1)=='pt20'){$shu1:padding-top;$zhi:'20px';}
+      @if (nth($attr,1)=='pb20'){$shu1:padding-bottom;$zhi:'20px';}
+      @if (nth($attr,1)=='pl20'){$shu1:padding-left;$zhi:'20px';}
+      @if (nth($attr,1)=='pr20'){$shu1:padding-right;$zhi:'20px';}
+
+      @if (nth($attr,1)=='m10'){$shu1:margin;$zhi:'10px';}
+      @if (nth($attr,1)=='mt10'){$shu1:margin-top;$zhi:'10px';}
+      @if (nth($attr,1)=='mb10'){$shu1:margin-bottom;$zhi:'10px';}
+      @if (nth($attr,1)=='ml10'){$shu1:margin-left;$zhi:'10px';}
+      @if (nth($attr,1)=='mr10'){$shu1:margin-right;$zhi:'10px';}
+
+      @if (nth($attr,1)=='m20'){$shu1:margin;$zhi:'20px';}
+      @if (nth($attr,1)=='mt20'){$shu1:margin-top;$zhi:'20px';}
+      @if (nth($attr,1)=='mb20'){$shu1:margin-bottom;$zhi:'20px';}
+      @if (nth($attr,1)=='ml20'){$shu1:margin-left;$zhi:'20px';}
+      @if (nth($attr,1)=='mr20'){$shu1:margin-right;$zhi:'20px';}
+
+      @if (nth($attr,1)=='c08c'){$shu1:color;$zhi:'#0088cc';}
+      @if (nth($attr,1)=='c069'){$shu1:color;$zhi:'#006699';}
+      @if (nth($attr,1)=='c3'){$shu1:color;$zhi:'#333';}
+      @if (nth($attr,1)=='c9'){$shu1:color;$zhi:'#999';}
+      @if (nth($attr,1)=='c6'){$shu1:color;$zhi:'#666';}
+      @if (nth($attr,1)=='cf'){$shu1:color;$zhi:'#fff';}
+
+      @if (nth($attr,1)=='bgc08c'){$shu1:background-color;$zhi:'#0088cc';}
+      @if (nth($attr,1)=='bgc069'){$shu1:background-color;$zhi:'#006699';}
+      @if (nth($attr,1)=='bgc3'){$shu1:background-color;$zhi:'#333';}
+      @if (nth($attr,1)=='bgc9'){$shu1:background-color;$zhi:'#999';}
+      @if (nth($attr,1)=='bgc6'){$shu1:background-color;$zhi:'#666';}
+      @if (nth($attr,1)=='bgcf'){$shu1:background-color;$zhi:'#fff';}
+
+      @if (nth($attr,1)=='oa'){$shu1:overflow;$zhi:'auto';}
+      @if (nth($attr,1)=='lh1'){$shu1:line-height;$zhi:'1';}
+      @if (nth($attr,1)=='lh1.5'){$shu1:line-height;$zhi:'1.5';}
+      @if (nth($attr,1)=='lh2'){$shu1:line-height;$zhi:'2';}
+      @if (nth($attr,1)=='lh24'){$shu1:line-height;$zhi:'24px';}
+      @if (nth($attr,1)=='lh34'){$shu1:line-height;$zhi:'34px';}
+      @if (nth($attr,1)=='lh48'){$shu1:line-height;$zhi:'48px';}
+
+      @if (nth($attr,1)=='z1'){$shu1:z-index;$zhi:1;}
+      @if (nth($attr,1)=='z2'){$shu1:z-index;$zhi:2;}
+      @if (nth($attr,1)=='z3'){$shu1:z-index;$zhi:3;}
+      @if (nth($attr,1)=='z4'){$shu1:z-index;$zhi:4;}
+      @if (nth($attr,1)=='z5'){$shu1:z-index;$zhi:5;}
+      @if (nth($attr,1)=='z10'){$shu1:z-index;$zhi:10;}
+      @if (nth($attr,1)=='z100'){$shu1:z-index;$zhi:100;}
+      @if (nth($attr,1)=='fz12'){$shu1:font-size;$zhi:'12px';}
+      @if (nth($attr,1)=='fz15'){$shu1:font-size;$zhi:'15px';}
+      @if (nth($attr,1)=='fz16'){$shu1:font-size;$zhi:'16px';}
+      @if (nth($attr,1)=='fz17'){$shu1:font-size;$zhi:'17px';}
+      @if (nth($attr,1)=='fz18'){$shu1:font-size;$zhi:'18px';}
+      @if (nth($attr,1)=='fz19'){$shu1:font-size;$zhi:'19px';}
+      @if (nth($attr,1)=='fz20'){$shu1:font-size;$zhi:'20px';}
+      @if (nth($attr,1)=='fz21'){$shu1:font-size;$zhi:'21px';}
+      @if (nth($attr,1)=='fz22'){$shu1:font-size;$zhi:'22px';}
+      @if (nth($attr,1)=='fw700'){$shu1:font-weight;$zhi:'700';}
+      @if (nth($attr,1)=='ffyh'){$shu1:font-family;$zhi:"Microsoft Yahei",sans-serif;}
+
+      @if (nth($attr,1)=='bddo'){$shu1:border-style;$zhi:'dotted';}
+      @if (nth($attr,1)=='bdcd'){$shu1:border-color;$zhi:'#ddd';}
+      @if (nth($attr,1)=='bdc08c'){$shu1:border-color;$zhi:'#08c';}
+
       @if (length($attr)==2) { //只有2个值时
         $shu: nth($attr, 1);$v1:'';
         @if (length(nth($attr,2))==5) {
@@ -4036,6 +4112,12 @@
           }
           $b:unquote($c+' '+$img+' '+ $x+' '+$nr1);
           $zhi: $b;
+        }
+      }
+      @if(length($attr)>2 and nth($attr,1)=='v'){
+        @if(nth($attr,2)=='w'){
+          $shi1:"width";
+          $zhi:nth($attr,3);
         }
       }
       @if(nth($attr,1)!='con'){$zhi:unquote($zhi);}

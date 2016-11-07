@@ -58,7 +58,7 @@ a {
     font-family: $ff;
     color: inherit;
     margin: 0;
-    -webkit-appearance: none;
+    //-webkit-appearance: none;
   }
   input{
     line-height:normal;
@@ -67,7 +67,7 @@ a {
   html input[type="button"],
   input[type="reset"],
   input[type="submit"] {
-    -webkit-appearance: button;
+    //-webkit-appearance: button;
     cursor: pointer;
     @if $lte7 {
       *overflow: visible;
@@ -157,7 +157,7 @@ a {
     color: inherit;
     font: inherit;
     margin: 0;
-    -webkit-appearance: none;
+    //-webkit-appearance: none;
   }
   button {
     overflow: visible;
@@ -210,7 +210,7 @@ a {
   }
   input[type="search"]::-webkit-search-cancel-button,
   input[type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
+    //-webkit-appearance: none;
   }
   fieldset {
     border: 1px solid #c0c0c0;
